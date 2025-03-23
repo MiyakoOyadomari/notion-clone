@@ -1,11 +1,20 @@
-import { Button } from "@/components/ui/button";
-export default function Home() {
+import { Footer } from "./_components/footer";
+import { Heading } from "./_components/heading";
+import { Heroes } from "./_components/heroes";
+
+const MarketingPage = () => {
   return (
-    <>
-      <p className="h-full bg-amber-200 text-red-500 font-bold">
-        Hello Notion Clone
-      </p>
-      <Button>Click me</Button>
-    </>
+    <div className="min-h-full flex flex-col">
+      <div
+        className="flex flex-col items-center justify-center 
+        md:justify-start text-center gap-y-8 flex-1 px-6 pb-10"
+      >
+        <Heading />
+        <Heroes />
+        <Footer />
+      </div>
+    </div>
   );
-}
+};
+
+export default MarketingPage;
